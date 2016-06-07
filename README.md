@@ -39,7 +39,9 @@ See https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_
 
 ## Deployment
 
-Zip the files inside the template folder (but not the folder itself) and `Upload and Deploy` from the elastic beanstalk dashboard.
+For a prebuilt deployment, copy and customise `Dockerrun.aws.prebuilt.json` to `Dockerrun.aws.json` and upload just that file to deploy.
+
+For a Dockerfile deployment, zip `Dockerrun.aws.json`, `Dockerfile` and any supporting files then `Upload and Deploy` the zipfile from the elastic beanstalk dashboard.
 
 Alternatively you can use (eb-cli)[https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html] to deploy changes.
 
